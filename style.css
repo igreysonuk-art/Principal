@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-size: 1000px;
+  background-image: url("images/bg.jpeg");
+  background-position: center center;
+}
+
+.paper {
+  background-image: url("images/paper.jpg");
+  background-size: 300px;
+  background-position: center center;
+  padding: 20px 50px;
+  /* min-width: 800px; */
+  
+  transform: rotateZ(-5deg);
+  box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paper.heart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.paper.image {
+  padding: 10px;
+}
+
+.paper.image p {
+  font-size: 30px;
+}
+
+img {
+  user-select: none;
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+}
+
+.img-1 {
+  max-height: 300px;
+}
+
+.img-2 {
+  max-height: 280px;
+}
+
+.img-3 {
+  max-height: 320px;
+}
+
+.normal-text {
+  margin: 15px;
+  background-color: rgba(0, 200, 255, 0.15);
+  padding: 0px 10px;
+  line-height: 40px;
+  border-radius: 10px;
+}
+
+.important-text {
+  min-width: 380px;
+  background-color: rgba(0, 200, 255, 0.15);
+  padding: 0px 5px;
+  border-radius: 20px;
+  font-size: 45px;
+}
+
+.paper.heart::after {
+  content: "";
+  background-image: url("images/heart.webp");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 150px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+p {
+  font-family: 'Zeyada';
+  font-size: 50px;
+  color: rgb(0,0,100);
+  opacity: 0.75;
+  user-select: none;
+  filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9));
+  text-align: center;
+}
